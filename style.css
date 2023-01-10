@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body{
+    margin:0;
+    padding:0;
+    font-family: 'Roboto', sans-serif;
+ }
+ section{
+    width:100%;
+    height:200vh;
+    background-image:url('s.png');
+    background-size:cover;
+ }
+ section .leftBox{
+    width:50%;
+    height: 80%;
+    float:left;
+    padding:50px;
+    box-sizing: border-box;
+ }
+ section .leftBox .content{
+    color:#fff;
+    background-color: rgba(0,0,0,.5);
+    padding: 40px;
+    transition: .5s;
+ }
+ section .leftBox .content:hover{
+    background-color: rgb(218, 35, 35);
+ }
+ section .leftBox .content h1{
+    margin: 0px;
+    padding:0px;
+    font-size: 50px;
+    text-transform: uppercase;
+ }
+ section .leftBox .content p{
+    margin:10px 0 0;
+    padding:0;
+ }
+ section .events{
+    position:relative;
+    width:50%;
+    height:100%;
+    background-color: rgba(0,0,0,.5);
+    float:right;
+    box-sizing: border-box;
+
+ }
+ section .events ul{
+    position:absolute;
+    top:20%;
+    transition:translateY(50%);
+    margin:0;
+    padding:20px;
+    box-sizing: border-box;
+ }
+ section .events ul li{
+    list-style: none;
+    background-color: #fff;
+    box-sizing: border-box;
+    height:230px;
+    margin: 15px 0;
+
+ }
+ section .events ul li .time{
+    position:relative;
+    padding: 80px;
+    background-color: #262626;
+    box-sizing: border-box;
+    width: 30px;
+    height: 100%;
+    float: left;
+    text-align: center;
+    transition: .5s;
+
+ }
+ section .events ul li:hover .time{
+    background-color: rgb(213, 82, 82);
+ }
+ section .events ul li .time h2{
+    position:absolute;
+    margin: 0;
+    padding:0;
+    bottom:40%;
+    left:20%;
+    transition:translate(-50%-50%);
+    color: #fff;
+    font-size: 50px;
+    line-height: 30px;
+
+ }
+ section .events ul li .time h2 span{
+    font-size: 30px;
+ }
+ section .events ul li .details{
+    padding: 20px;
+    background-color: #fff;
+    box-sizing: border-box;
+    width: 70%;
+    height: 100%;
+    float: left;
+
+ }
+ section .events ul li .details h3{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-size:22px;
+ }
+ section .events ul li .details p{
+    position: relative;
+    margin:-px 0 0;
+    padding: 0;
+    font-size:16px;
+ }
+ section .events ul li .details a{
+    display: inline-block;
+    text-decoration: none;
+    
+    padding: 10px 15px;
+    border: 2px solid #262626;
+    margin-top: 15px;
+    font-size: 18px;
+    transition: .5s;
+  
+ }
+ section .events ul li .details a:hover{
+    background-color: red;
+    color: white;
+    border-color:#e91e63;
+ }
+ 
+ @media only screen and (max-width:800px) {
+    section{
+        
+        height:100%;
+        background-position: center;
+        
+    }
+    section .leftBox{
+        width:100%;
+        height:auto;
+        float: none;
+        padding:30px;
+    }
+    section .events{
+    
+        width:100%;
+        height:auto;
+        background-color: transparent;
+        float: none;
+     
+    }
+    section .leftBox .content{
+        padding: 20px;
+    }
+    section .leftBox .content h1{
+  font-size: 30px;
+    }
+    section .events ul{
+        position: relative;
+        transform: translateY(0px);
+        padding: 0 20px 20px;
+    }
+    section .events ul li{
+        height: auto;
+        background-color: rgba(225,225,225,.8);
+    }
+    section .events ul li .time{
+        width: 80px;
+        height: 80px;
+        padding: 0;
+    }
+    section .events ul li .time h2{
+        font-size: 20px;
+        line-height: 20px;
+    }
+    section .events ul li .time h2 span{
+        font-size: 20px;
+    }
+    section .events ul li .details{
+        width:100%;
+        float: none;
+        padding-left:100px;
+        background: transparent;
+    }
+    section .events ul li .details a{
+      padding: 5px 10px;
+    }
+ 
+}
+@media only screen and (max-width:400px) {
+   section{
+       
+       height:100%;
+       background-position: center;
+       
+   }
+   section .leftBox{
+       width:100%;
+       height:auto;
+       float: none;
+       padding:30px;
+   }
+   section .events{
+   
+       width:100%;
+       height:auto;
+       background-color: transparent;
+       float: none;
+    
+   }
+   section .leftBox .content{
+       padding: 20px;
+   }
+   section .leftBox .content h1{
+ font-size: 30px;
+   }
+   section .events ul{
+       position: relative;
+       transform: translateY(0px);
+       padding: 0 20px 20px;
+   }
+   section .events ul li{
+       height: auto;
+       background-color: rgba(225,225,225,.8);
+   }
+   section .events ul li .time{
+       width: 80px;
+       height: 80px;
+       padding: 0;
+   }
+   section .events ul li .time h2{
+       font-size: 20px;
+       line-height: 20px;
+   }
+   section .events ul li .time h2 span{
+       font-size: 20px;
+   }
+   section .events ul li .details{
+       width:100%;
+       float: none;
+       padding-left:100px;
+       background: transparent;
+   }
+   section .events ul li .details a{
+     padding: 5px 10px;
+   }
+
+}
